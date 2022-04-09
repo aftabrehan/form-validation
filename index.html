@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <form action="#">
+        <h1 class="main-title">Login Form</h1>
+        
+        <div class="input-wrapper">
+    
+           <div class="input-group">
+                <label for="name">Username</label>
+                <input type="text" name="name" id="name" autocomplete="off">
+                <span id="user-err"></span>
+           </div>
+
+            <div class="input-group">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" autocomplete="off">
+                <span id="pass-err"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="cnfpass">Confirm Password</label>
+                <input type="password" name="cnfpass" id="cnfpass" autocomplete="off">
+                <span id="cnfpass-err"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+                <span id="email-err"></span>
+            </div>
+
+           <div class="input-group">
+                <label for="num">Phone Number</label>
+                <input type="number" name="num" id="num" autocomplete="off">
+                <span id="num-err"></span>
+           </div>
+    
+            
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
