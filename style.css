@@ -1,0 +1,78 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwahttps://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=339&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    width: 26%;
+    min-width: 330px;
+} 
+.main-title {
+    color: rgb(50, 50, 50);
+    font-family: ubuntu;
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.input-group {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color:rgb(50, 50, 50);
+    font-size: 17px;
+    
+}
+.input-group input {
+    padding: .25rem 1.75;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+form button {
+    margin: 1rem;
+    cursor: pointer;
+    padding: .25rem 1.75;
+    background-color: transparent;
+    border: none;
+    color:rgb(50, 50, 50);
+    font-size: 19px;
+    transition: .550ms;
+}
+
+form button:hover {
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+#user-Err,
+#pass-Err,
+#cnf-Err,
+#email-Err,
+#num-Err {
+    color: red;
+    font-size: .9rem;
+    padding-top: .2rem;
+}
